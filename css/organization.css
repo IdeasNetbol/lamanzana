@@ -22,6 +22,12 @@ body {
     padding: 0% 2%;
 }
 
+.carrot {
+    background-image: url('../images/Carrot.png');
+    background-repeat: round;
+    background-size: cover;
+}
+
 .main {
     width: 100%;
     height: auto;
@@ -642,6 +648,9 @@ hr {
 /* TABLET */
 
 @media only screen and (max-width: 1024px) {
+    .carrot {
+        background-image: none;
+    }
     .presentation-section .presentation-container {
         width: 90%;
     }
@@ -726,6 +735,7 @@ hr {
     }
     .objetive-section .objetive-container {
         margin-top: 10%;
+        background-color: beige;
     }
     .objetive-container .objetive-text {
         text-align: center;
@@ -822,5 +832,8 @@ hr {
 @media only screen and (max-width: 320px) {
     .statistics-container .statistic {
         width: 85%;
+    }
+    .information-section .information-container {
+        height: 290px;
     }
 }
