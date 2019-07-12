@@ -7,6 +7,21 @@ body {
     color: black
 }
 
+.radius {
+    border-radius: 3px;
+}
+
+.title {
+    background-color: #C62127;
+    color: white;
+    font-size: 23px;
+    border-radius: 2px;
+}
+
+.title p {
+    padding: 0% 2%;
+}
+
 .main {
     width: 100%;
     height: auto;
@@ -120,6 +135,10 @@ body {
 .history-container .history-img-container {
     width: 100%;
     height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
 }
 
 .history-container .history-info-container {
@@ -164,13 +183,6 @@ body {
     height: auto;
 }
 
-.what-food-bank .food-bank-title {
-    background-color: #C62127;
-    color: white;
-    font-size: 23px;
-    padding-left: 2%;
-}
-
 .what-food-bank .food-bank-text {
     display: flex;
     font-size: 19px;
@@ -207,6 +219,7 @@ body {
 
 .objetive-img img {
     width: 80%;
+    border-radius: 2px;
 }
 
 .objetive-container .objetive-title {
@@ -214,6 +227,7 @@ body {
     color: white;
     font-size: 23px;
     padding-left: 4%;
+    border-radius: 2px;
 }
 
 .objetive-container .objetive-text {
@@ -233,15 +247,8 @@ body {
 }
 
 .why-food-bank .why-food-title {
-    width: 100%;
     text-align: right;
-    background-color: #C62127;
-    color: white;
-    font-size: 23px;
-}
-
-.why-food-title p {
-    padding-right: 2%;
+    width: 100%;
 }
 
 .why-food-bank .statistics-container {
@@ -409,9 +416,6 @@ hr {
 .who-are-section .who-are-title {
     width: 90%;
     text-align: left;
-    background-color: #C62127;
-    color: white;
-    font-size: 23px;
 }
 
 .who-are-title p {
@@ -543,22 +547,15 @@ hr {
 .departments-section .departments-title {
     width: 90%;
     text-align: left;
-    background-color: #C62127;
-    color: white;
-    font-size: 23px;
-}
-
-.departments-title p {
-    padding-left: 2%;
 }
 
 .departments-section .departments-container {
     width: 90%;
     height: auto;
     display: flex;
-    margin-bottom: 2%;
     justify-content: center;
     flex-wrap: wrap;
+    background-color: beige;
 }
 
 .departments-container .department {
@@ -582,6 +579,63 @@ hr {
     width: 100%;
     text-align: justify;
     line-height: 1.6em;
+}
+
+.main .impact-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.impact-section .impact-title {
+    width: 90%;
+    height: auto;
+    text-align: left;
+}
+
+.impact-section .impact-container {
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 0%;
+}
+
+.impact-container .impact-info {
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    background-color: beige;
+    border-radius: 2px;
+}
+
+.impact-container .impact-img-container {
+    width: 20%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.impact-img-container img {
+    width: auto;
+    height: 250px;
+}
+
+.impact-info .impact-title-container {
+    width: 100%;
+    color: #C62127;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.impact-info .impact-text {
+    text-align: justify;
 }
 
 
@@ -716,6 +770,9 @@ hr {
         flex-direction: column;
         align-items: center;
     }
+    .information-section .information-container {
+        margin-top: 0%;
+    }
     .who-are-section .members-section {
         flex-direction: column;
     }
@@ -749,6 +806,15 @@ hr {
         flex-direction: column;
     }
     .departments-container .department {
+        width: 90%;
+    }
+    .impact-container .impact-img-container {
+        display: none;
+    }
+    .impact-section .impact-container {
+        width: 90%;
+    }
+    .impact-container .impact-info {
         width: 90%;
     }
 }
