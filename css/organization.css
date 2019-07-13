@@ -7,9 +7,11 @@ body {
     color: black
 }
 
-p {
+
+/* p {
     margin: 0px;
-}
+    font-size: 17px;
+} */
 
 .radius {
     border-radius: 3px;
@@ -27,7 +29,7 @@ p {
 }
 
 .carrot {
-    background-image: url('../images/Carrot.png');
+    background-image: url('../images/organization/Carrot.png');
     background-repeat: round;
     background-size: cover;
 }
@@ -313,11 +315,12 @@ p {
 }
 
 .statistics-container>.left .statistic-number {
-    width: 40%
+    width: 50%
 }
 
 .statistics-container>.left .statistic-text {
-    width: 60%
+    width: 50%;
+    font-size: 17px;
 }
 
 .statistics-container>.right .statistic-number {
@@ -326,6 +329,7 @@ p {
 
 .statistics-container>.right .statistic-text {
     width: 30%;
+    font-size: 13px;
 }
 
 .statistic-box>.right p {
@@ -569,7 +573,7 @@ hr {
 }
 
 .departments-container .department {
-    width: 40%;
+    width: 50%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -585,10 +589,16 @@ hr {
     font-size: 17px;
 }
 
-.department .department-text {
+.department .department-text p {
     width: 100%;
     text-align: justify;
     line-height: 1.6em;
+    margin: 0%;
+    font-size: 17px
+}
+
+.department .department-text>.list {
+    text-align: left;
 }
 
 .main .impact-section {
@@ -646,6 +656,7 @@ hr {
 
 .impact-info .impact-text {
     text-align: justify;
+    font-size: 17px;
 }
 
 
@@ -696,9 +707,6 @@ hr {
     .interns-info .interns-title {
         font-size: 17px;
         text-align: center;
-    }
-    .departments-container .department {
-        width: 50%;
     }
 }
 
@@ -821,6 +829,7 @@ hr {
     }
     .departments-section .departments-container {
         flex-direction: column;
+        align-items: center;
     }
     .departments-container .department {
         width: 90%;
