@@ -19,6 +19,7 @@
     <link id="theme-color-file" href="css/color-themes/default-theme.css" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
@@ -137,29 +138,24 @@
 
     </header>
 
-    <div class="contact-section">
+    <div class="contact-section animated fadeIn slower">
         <div class='contact-container'>
 
             <div class='section'>
-                <div class="contact-form">
-                    <form class="">
-
+                <div class="contact-form animated fadeInLeft slow">
+                    <form>
                         <p class="h4 mb-4 text-center">Contáctanos</p>
-
                         <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Nombre">
-
                         <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
-
                         <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Asunto">
-
                         <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Consulta"></textarea><br>
-                        <button class="btn btn-info btn-block" type="submit">Enviar</button>
+                        <button class="btn btn-info btn-block animated pulse slower infinite" type="submit">Enviar</button>
                     </form>
                 </div>
 
             </div>
-            <div class='section contact-img-container'>
-                <img src="./images/contact/manzana.jpg" alt="">
+            <div class='section'>
+                <img class='animated fadeInRight slow' src="./images/contact/manzana.jpg" alt="">
             </div>
         </div>
     </div>

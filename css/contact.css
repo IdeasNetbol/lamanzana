@@ -39,6 +39,9 @@
     .contact-section .contact-container {
         width: 100%;
     }
+    .section .contact-form {
+        width: 85%;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -49,15 +52,14 @@
     .contact-container .contact-img-container {
         width: 30%;
     }
-    .contact-img-container img {
-        width: 30%;
+    .section>img {
+        max-width: 30%;
     }
     .contact-container .section {
         width: 85%;
         height: auto;
     }
     .section .contact-form {
-        width: 80%;
         padding: 4%;
     }
 }
