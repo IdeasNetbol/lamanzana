@@ -143,13 +143,14 @@
 
             <div class='section'>
                 <div class="contact-form animated fadeInLeft slow">
-                    <form>
+                    <form id="form1">
                         <p class="h4 mb-4 text-center">Contáctanos</p>
-                        <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Nombre">
-                        <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
-                        <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Asunto">
-                        <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Consulta"></textarea><br>
-                        <button class="btn btn-info btn-block animated pulse slower infinite" type="submit">Enviar</button>
+                        <input type="text" id="name" class="form-control mb-4" placeholder="Nombre">
+                        <input type="text" id="phone" class="form-control mb-4" placeholder="Celular">
+                        <input type="email" id="email" class="form-control mb-4" placeholder="E-mail">
+                        <input type="text" id="topic" class="form-control mb-4" placeholder="Asunto">
+                        <textarea class="form-control rounded-0" id="message" rows="3" placeholder="Consulta"></textarea><br>
+                        <div class="btn btn-info btn-block animated pulse slower infinite" onclick="sendEmail()">Enviar</div>
                     </form>
                 </div>
 
@@ -242,6 +243,8 @@
         </div>
 
     </footer>
+    <script src="js/contact.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 
 </body>
 
